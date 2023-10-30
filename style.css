@@ -132,6 +132,14 @@ nav li:hover{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.all-card a{
+    width: 23%;
+    height: 40rem;
+}
+.all-card a{
+    text-decoration: none;
+    color: var(--text-color);
+}
 .card-container{
     background: var(--card-bg);
     width: 24%;
@@ -162,6 +170,7 @@ nav li:hover{
 }
 .card-description h2{
     padding: 0 6rem;
+    text-align: center;
 }
 .contact-section{
     margin-top: 4rem;
@@ -204,7 +213,7 @@ nav li:hover{
     color: var(--hover-color);
 }
 .contact-right{
-    margin-right: 10rem;
+    margin-right: 6rem;
 }
 .send-msg{
     display: flex;
