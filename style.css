@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+  --hover-color: #01d293;
+  --bg-primary-color: #0e1630;
+  --text-color: #808DAD;
+  --card-bg: #262e4c;
+  --input-color: #171F38;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.4;
+    font-weight: 100;
+    color: white;
+    scroll-behavior: smooth;
+    background: var(--bg-primary-color);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.4rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg-primary-color);
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    scroll-margin: 5.5rem;
+}
+.container .first-letter{
+    color: var(--hover-color);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav li{
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+nav li:hover{
+    color: var(--hover-color);
+}
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    margin-top: -5rem;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-text{
+    width: 60%;
+    padding-right: 20rem;
+    margin-top: -10rem;
+}
+.line-heading{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.line-heading .line{
+    width: 3rem;
+    height: 1px;
+    background: var(--hover-color);
+}
+.line-heading .text{
+    color: var(--hover-color);
+    font-size: 2.5rem;
+}
+.hero-text h1{
+    font-size: 3.5rem;
+    padding: 0.5rem 0;
+}
+.hero-text h2{
+    padding: 0.5rem 0;
+}
+.hero-text h4{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.hero-text p{
+    padding: 0.5rem 0;
+    color: var(--text-color);
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+}
+.hero-img{
+    width: 400px;
+    height: 400px;
+}
+.hero-img img{
+    margin-right: -5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.projects-section{
+    margin-top: -3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.all-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-container{
+    background: var(--card-bg);
+    width: 24%;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    transition: 0.2s ease-in-out
+}
+.card-container:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out
+}
+.project-card{
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-card img{
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+}
+.card-img{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.card-description h2{
+    padding: 0 6rem;
+}
+.contact-section{
+    margin-top: 4rem;
+    height: 35rem;
+}
+.connect{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact-left h2{
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+.connect i{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    color: var(--hover-color);
+}
+.connect .place{
+    padding-left: 0.5rem;
+}
+.contact-left p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.connect .email:hover{
+    color: var(--hover-color);
+}
+.socials{
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+.socials i{
+    color: var(--text-color);
+    font-size: 2.5rem;
+}
+.socials i:hover{
+    color: var(--hover-color);
+}
+.contact-right{
+    margin-right: 10rem;
+}
+.send-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.send-msg .txt-input{
+    width: 40rem;
+    height: 3rem;
+    margin: 0.5rem 0;
+    background: var(--input-color);
+    border-radius: 1rem;
+    border: none;
+    padding: 2rem;
+} 
+.send-msg .txt-area{
+    height: 8.5rem;
+}
+.btn-send-msg{
+    height: 3rem;
+    width: 40rem;
+    background: #2563EB;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 0.3rem;
+}
+.end-line{
+    width: 100%;
+    height: 0.1rem;
+    background: white;
+}
+footer{
+    color: var(--text-color);
+    text-align: center;
+    /* font-size: 1.5rem; */
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #171f38;
+}
