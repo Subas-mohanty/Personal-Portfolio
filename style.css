@@ -39,12 +39,15 @@ header{
 .container{
     max-width: 1300px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem ;
+}
+nav{
     display: flex;
     justify-content: space-between;
     scroll-margin: 5.5rem;
+    padding: 1.5rem 0;
 }
-.container .first-letter{
+nav .first-letter{
     color: var(--hover-color);
 }
 nav ul{
@@ -127,10 +130,14 @@ nav li:hover{
     flex-direction: column;
     gap: 1.5rem;
 }
+#project-title{
+    padding: 0 1rem;
+}
 .all-card{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 1rem;
 }
 .all-card a{
     width: 23%;
@@ -175,6 +182,8 @@ nav li:hover{
 .contact-section{
     margin-top: 4rem;
     height: 35rem;
+    display: flex;
+    justify-content: space-between;
 }
 .connect{
     display: flex;
@@ -216,7 +225,7 @@ nav li:hover{
     color: var(--hover-color);
 }
 .contact-right{
-    margin-right: 6rem;
+    /* margin-right: 6rem; */
 }
 .send-msg{
     display: flex;
@@ -255,8 +264,145 @@ nav li:hover{
 footer{
     color: var(--text-color);
     text-align: center;
-    /* font-size: 1.5rem; */
     padding-bottom: 10px;
     padding-top: 20px;
     border-top: 1px solid #171f38;
+}
+@media(max-width:1190px){
+    .container{
+        padding: 2rem 4rem;
+
+    }
+}
+@media(max-width:760px){
+    .projects-section{
+        scroll-margin: 6rem;
+    }
+    .card-container{
+        background: var(--card-bg);
+        width: 32%;
+    }
+    .hero-text{
+        margin-top: 0.3rem;
+        padding-right: 15rem;
+    }
+    .send-msg .txt-input{
+        width: 30rem;
+    }
+    .btn-send-msg{
+        width: 30rem;
+    }
+}
+@media(max-width:700px){
+    .hero-text{
+        padding-right: 10rem;
+    }
+    .hero-img{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media(max-width:630px){
+    .hero-text{
+        padding-right: 5rem;
+    }
+    .hero-img{
+        width: 300px;
+        height: 300px;
+    }
+    .card-description h2{
+        font-size: 1.8rem;
+    }
+    .contact-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .send-msg .txt-input{
+        width: 35rem;
+    }
+    .btn-send-msg{
+        width: 35rem;
+    }
+    footer{
+        margin-top: 15rem;
+    }
+}
+@media(max-width:490px){
+    .hero-img{
+        width: 250px;
+        height: 250px;
+    }
+    .projects-section{
+        scroll-margin: 10rem;
+    }
+    .card-description h2{
+        font-size: 1.3rem;
+    }
+    .send-msg .txt-input{
+        width: 33rem;
+    }
+    .btn-send-msg{
+        width: 33rem;
+    }
+}
+@media(max-width:400px){
+    .hero-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: -8rem;
+    }
+    .hero-text{
+        padding-right: 0;
+        margin-top: 0.7rem;
+    }
+    .hero-text p{
+        font-size: 13px;
+    }
+    .hero-text h4{
+        font-size: 15px;
+    }
+    .hello-name{
+        display: flex;
+        gap: 0.7rem;
+    }
+    .hello-name h1, .text{
+        font-size: 16px;
+    }
+    .line-heading .line{
+        width: 1.5rem;
+    }
+    .logo{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }   
+    .hero-img{
+        width: 200px;
+        height: 200px;
+    }
+    .projects-section{
+        margin-top: -6rem;
+    }
+    .card-container{
+        background: var(--card-bg);
+        width: 47%;
+    }
+    .send-msg .txt-input{
+        width: 28rem;
+    }
+    .btn-send-msg{
+        width: 28rem;
+    }
+}
+@media(max-width:360px){
+    /* .hero-img{
+        width: 100px;
+        height: 100px;
+    } */
+    .projects-section{
+        scroll-margin: 6rem;
+    }
 }
